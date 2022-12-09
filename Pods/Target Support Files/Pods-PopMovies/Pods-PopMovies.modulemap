@@ -1,0 +1,6 @@
+framework module Pods_PopMovies {
+  umbrella header "Pods-PopMovies-umbrella.h"
+
+  export *
+  module * { export * }
+}

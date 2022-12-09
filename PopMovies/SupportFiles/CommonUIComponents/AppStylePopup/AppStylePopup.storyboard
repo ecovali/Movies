@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HarmoniaSans-Bold.otf">
+            <string>HarmoniaSansStd-Bold</string>
+        </array>
+        <array key="HarmoniaSans-Regular.otf">
+            <string>HarmoniaSansStd-Regular</string>
+        </array>
+        <array key="HarmoniaSans-SemiBd.otf">
+            <string>HarmoniaSansStd-SemiBd</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--App Style Popup-->
+        <scene sceneID="zYN-tk-mac">
+            <objects>
+                <viewController storyboardIdentifier="AppStylePopup" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="BU2-eJ-vIO" customClass="AppStylePopup" customModule="DEX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ya-wE-k3o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNx-Ox-Gky">
+                                <rect key="frame" x="32" y="240" width="350" height="366.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VcJ-3v-MSN">
+                                        <rect key="frame" x="24" y="28" width="302" height="235.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pm1-zu-Vmb">
+                                                <rect key="frame" x="0.0" y="0.0" width="302" height="130"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TIW-bK-S4L">
+                                                        <rect key="frame" x="98" y="0.0" width="106" height="106"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="TIW-bK-S4L" secondAttribute="height" multiplier="1:1" id="Fhr-K9-bJA"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="pm1-zu-Vmb" secondAttribute="height" multiplier="151:65" id="2hS-9b-Gat"/>
+                                                    <constraint firstAttribute="bottom" secondItem="TIW-bK-S4L" secondAttribute="bottom" constant="24" id="EAI-Zl-SDV"/>
+                                                    <constraint firstItem="TIW-bK-S4L" firstAttribute="top" secondItem="pm1-zu-Vmb" secondAttribute="top" id="nDG-dY-5qd"/>
+                                                    <constraint firstItem="TIW-bK-S4L" firstAttribute="centerX" secondItem="pm1-zu-Vmb" secondAttribute="centerX" id="xBi-1Q-i67"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popup title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7i-Mx-Rid">
+                                                <rect key="frame" x="0.0" y="146" width="302" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="HarmoniaSansStd-Bold" family="Harmonia Sans Std" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ejO-KM-EQY">
+                                                <rect key="frame" x="0.0" y="185.5" width="302" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popup first subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY6-PH-ON6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="302" height="19"/>
+                                                        <fontDescription key="fontDescription" name="HarmoniaSansStd-Regular" family="Harmonia Sans Std" pointSize="16"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popup first subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjd-4d-sQa">
+                                                        <rect key="frame" x="0.0" y="31" width="302" height="19"/>
+                                                        <fontDescription key="fontDescription" name="HarmoniaSansStd-Regular" family="Harmonia Sans Std" pointSize="16"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Do5-Kn-Y7s">
+                                        <rect key="frame" x="0.0" y="293.5" width="350" height="53"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e5p-5t-BwD">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="53"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bg7-0w-mUd">
+                                                        <rect key="frame" x="121" y="0.0" width="108" height="53"/>
+                                                        <color key="backgroundColor" name="StripMenuSelectedButtonTitle"/>
+                                                        <fontDescription key="fontDescription" name="HarmoniaSansStd-SemiBd" family="Harmonia Sans Std" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="20" minY="16" maxX="22" maxY="18"/>
+                                                        <state key="normal" title="Ok, got it">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W0r-vg-m6V">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25e-kg-ZpF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="60"/>
+                                                        <fontDescription key="fontDescription" name="HarmoniaSansStd-SemiBd" family="Harmonia Sans Std" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                                        <state key="normal" title="Cancel">
+                                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWY-q9-eKM">
+                                                        <rect key="frame" x="175" y="0.0" width="175" height="60"/>
+                                                        <color key="backgroundColor" name="StripMenuSelectedButtonTitle"/>
+                                                        <fontDescription key="fontDescription" name="HarmoniaSansStd-SemiBd" family="Harmonia Sans Std" pointSize="16"/>
+                                                        <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                                        <state key="normal" title="Ok">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="zJl-il-vbK"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="VcJ-3v-MSN" firstAttribute="top" secondItem="VNx-Ox-Gky" secondAttribute="top" constant="28" id="2nH-Cg-hUC"/>
+                                    <constraint firstItem="Do5-Kn-Y7s" firstAttribute="leading" secondItem="VNx-Ox-Gky" secondAttribute="leading" id="Dyp-fS-16Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="Do5-Kn-Y7s" secondAttribute="trailing" id="LVX-4k-gzn"/>
+                                    <constraint firstItem="VcJ-3v-MSN" firstAttribute="leading" secondItem="VNx-Ox-Gky" secondAttribute="leading" constant="24" id="Re7-d0-DDd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Do5-Kn-Y7s" secondAttribute="bottom" constant="20" id="eVC-9E-qba"/>
+                                    <constraint firstItem="Do5-Kn-Y7s" firstAttribute="top" secondItem="VcJ-3v-MSN" secondAttribute="bottom" constant="30" id="lct-61-q7F"/>
+                                    <constraint firstAttribute="trailing" secondItem="VcJ-3v-MSN" secondAttribute="trailing" constant="24" id="ztD-aM-KP7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VNx-Ox-Gky" firstAttribute="leading" secondItem="w6t-QF-b53" secondAttribute="leading" constant="32" id="4Wa-tm-s5t"/>
+                            <constraint firstItem="w6t-QF-b53" firstAttribute="trailing" secondItem="VNx-Ox-Gky" secondAttribute="trailing" constant="32" id="Oe9-HM-UY3"/>
+                            <constraint firstItem="VNx-Ox-Gky" firstAttribute="centerY" secondItem="6ya-wE-k3o" secondAttribute="centerY" constant="-25" id="hYx-EX-EIW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w6t-QF-b53"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonsBottomOffsetConstraint" destination="eVC-9E-qba" id="jaj-8s-9z9"/>
+                        <outlet property="buttonsContainerLeadingConstraint" destination="Dyp-fS-16Q" id="BAN-kU-2RL"/>
+                        <outlet property="horizontalButtonsStackView" destination="W0r-vg-m6V" id="qos-ER-0lB"/>
+                        <outlet property="imageContainerView" destination="pm1-zu-Vmb" id="UE6-cI-9B6"/>
+                        <outlet property="imageView" destination="TIW-bK-S4L" id="xZA-ad-Z9c"/>
+                        <outlet property="popupView" destination="VNx-Ox-Gky" id="naH-rN-kvM"/>
+                        <outlet property="subtitlesStackView" destination="ejO-KM-EQY" id="bOH-pD-sM9"/>
+                        <outlet property="titleLabel" destination="c7i-Mx-Rid" id="daq-c2-pjF"/>
+                        <outlet property="verticalButtonsStackView" destination="e5p-5t-BwD" id="vD1-Cl-6bV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7D-9g-soC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="150.66964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="StripMenuSelectedButtonTitle">
+            <color red="0.20392156862745098" green="0.38823529411764707" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
